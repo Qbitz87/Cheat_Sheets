@@ -1,6 +1,6 @@
 ## Core Search Operators
 
-```http
+```
 "search phrase"        # Exact phrase search. Crucial for names, specific errors, etc.
 		             # Example: "Ola Nordmann"
 
@@ -34,11 +34,12 @@ related:domain.com     # Find sites Google considers related to domain.com.
 
 link:domain.com        # Find pages linking to domain.com (limited results nowadays).
 ```
+
 ## Combining Operators for Powerful Queries
 
 _Operators can be chained together to create highly specific searches._
 
-```http
+```
 # Find PDF reports mentioning "strategy" on Norwegian government sites
 site:*.gov.no filetype:pdf "strategy" OR "strategi"
 
@@ -54,7 +55,7 @@ intitle:"index of" "backup" OR "dump"
 
 ## OSINT Dork Examples
 
-```http
+```
 # Finding Files & Documents
 site:*.no filetype:pdf "årsrapport" OR "annual report"         # Find annual reports on .no sites
 site:company.com filetype:xlsx "budget" OR "forecast"         # Find budget spreadsheets on company site
